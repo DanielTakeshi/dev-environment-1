@@ -1,3 +1,35 @@
+Steps to get dev env set up on a new gCloud instance with Ubuntu 18.04. First, install some stuff needed for YCM later:
+
+```
+sudo apt install build-essential cmake
+```
+
+Clone this repository, follow steps in `install.sh`, run the steps manually as I find it easier:
+
+```
+cp -a bashrc ~/.bashrc
+./install_python.sh
+```
+
+Now here, if you update bashrc, you'll get (base) and can use conda commands:
+
+```
+. ~/.bashrc
+conda config --set auto_activate_base false
+. ~/.bashrc
+```
+
+At this point, commands like `conda info --envs` and `python` should both work. Then do the last step:
+
+```
+./install_vim.sh
+```
+
+And now YCM should be installed. :)
+
+
+(Normal README follows)
+
 # Dev Environment Setup
 
 This are config files and install scripts for a number of programs that I often use. It mostly sets up a python development environment with vim. At the moment it contains
