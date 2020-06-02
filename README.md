@@ -1,6 +1,7 @@
 Steps to get dev env set up on a new gCloud instance with Ubuntu 18.04. First, install some stuff needed for YCM later:
 
 ```
+sudo apt update
 sudo apt install build-essential cmake
 ```
 
